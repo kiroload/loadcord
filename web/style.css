@@ -1,0 +1,143 @@
+:root {
+  --bg: #0b0f17;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --blue: #5aa9ff;
+  --shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.light {
+  --bg: #f6f7fb;
+  --card: white;
+  --border: #e5e7eb;
+  --text: #111;
+  --muted: #6b7280;
+  --shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 28px;
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-btn {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.small {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.icon-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.ghost-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 12px;
+  color: var(--text);
+}
+
+.danger-btn {
+  background: rgba(239,68,68,0.15);
+  border: 1px solid rgba(239,68,68,0.3);
+  color: #ef4444;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+
+.card-info h3 {
+  margin: 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+  display: block;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
